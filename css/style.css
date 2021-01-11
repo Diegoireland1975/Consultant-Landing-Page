@@ -45,7 +45,7 @@ img {
   height: 3rem;
   object-fit: contain;
   margin-bottom: 2rem;
-  background-color: var(--btn-primary);
+  background-color: #c8c8c8;
   border-radius: 50%;
   padding: 0.5rem;
 }
@@ -58,7 +58,7 @@ img {
   transition: 0.4s background-color, color ease;
   padding: 0.7rem 1.5rem;
   border-radius: 0.5rem;
-  color: var(--btn-primary);
+  color: #717784;
 }
 
 .main-nav a:hover,
@@ -81,11 +81,17 @@ img {
 
 .showcase h1 {
   font-size: 2rem;
+  color: #696a86;
+}
+
+.showcase p {
+  color: #696a86;
 }
 
 .showcase-text {
   margin-top: 2rem;
   min-height: 90vh;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -104,7 +110,7 @@ img {
   }
 
   .main-header .flex {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .nav-link li {
