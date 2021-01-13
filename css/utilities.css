@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 .container {
   width: 90%;
   max-width: 1100px;

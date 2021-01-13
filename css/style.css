@@ -19,6 +19,7 @@ html {
 body {
   font-family: "Signika", sans-serif;
   overflow-x: hidden;
+  line-height: 1.4;
 }
 
 a {
@@ -104,6 +105,7 @@ img {
 /* Service */
 .service {
   min-height: 100vh;
+  line-height: 1.2;
 }
 
 .service-text {
@@ -196,6 +198,28 @@ img {
   width: 1rem;
 }
 
+/* Questions */
+
+.questions h2 {
+  font-size: 2rem;
+}
+
+.questions img {
+  height: 500px;
+  object-fit: contain;
+}
+
+#questions {
+  padding: 1rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  display: block;
+  font-family: "Montserrat";
+  border: none;
+  max-width: 300px;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
   .flex {
@@ -204,6 +228,9 @@ img {
     align-items: center;
   }
 
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .main-header .flex {
     justify-content: space-around;
   }
