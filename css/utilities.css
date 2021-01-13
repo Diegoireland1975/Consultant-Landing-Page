@@ -36,7 +36,8 @@
 }
 
 .btn-primary {
-  color: var(--btn-primary);
+  color: #fff;
+  background: var(--btn-primary);
 }
 
 .btn-secondary {

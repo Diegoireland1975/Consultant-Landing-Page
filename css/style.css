@@ -217,7 +217,11 @@ img {
   display: block;
   font-family: "Montserrat";
   border: none;
-  max-width: 300px;
+  max-width: 350px;
+}
+
+#questions img {
+  width: 2rem;
 }
 
 /* Media queries */
