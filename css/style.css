@@ -39,7 +39,7 @@ img {
 .main-header {
   min-height: 100vh;
   z-index: 100;
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  background: url("../img/showcase.jpg") no-repeat 70% 100% / cover;
   position: relative;
 }
 #logo {
@@ -98,7 +98,7 @@ img {
 }
 
 .showcase-text a {
-  width: 10rem;
+  width: 8rem;
 }
 
 /* Service */
@@ -123,6 +123,16 @@ img {
 .services div {
   max-width: 200px;
   margin: 2rem auto;
+  transition: 0.3s transform ease;
+  padding: 1rem;
+}
+
+.services div:hover,
+.services div:focus {
+  transform: translateY(-1rem);
+  background: rgb(245, 245, 245);
+  color: var(--primary-color);
+  cursor: pointer;
 }
 .services img {
   width: 2rem;
@@ -136,6 +146,30 @@ img {
 .services h4,
 .services p {
   color: var(--btn-primary);
+}
+
+.people-text {
+  color: var(--btn-primary);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.people-text h3 {
+  margin-bottom: 1rem;
+}
+
+.people-img img {
+  padding: 1rem;
+}
+.people-img img {
+  flex-wrap: wrap;
+  transition: 0.4s transform ease;
+}
+
+.people-img img:hover,
+.people-img:focus {
+  transform: translateY(-0.5rem);
 }
 
 /* Media queries */
@@ -156,5 +190,35 @@ img {
 
   .showcase h1 {
     font-size: 3rem;
+  }
+
+  .people-img img {
+    width: 7rem;
+  }
+
+  .people img {
+    margin-right: 3rem;
+  }
+
+  .people-img .flex:nth-child(1) img:first-child {
+    position: relative;
+    top: -2rem;
+  }
+
+  .people-img .flex:nth-child(2) img:first-child {
+    position: relative;
+    top: -2rem;
+    left: -4rem;
+  }
+
+  .people-img .flex:nth-child(3) img:first-child {
+    position: relative;
+    top: -3rem;
+    left: -2rem;
+  }
+
+  .people-img .flex:nth-child(3) img:last-child {
+    position: relative;
+    top: 2rem;
   }
 }
