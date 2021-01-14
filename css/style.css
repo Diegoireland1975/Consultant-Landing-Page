@@ -207,6 +207,7 @@ img {
 .questions img {
   height: 500px;
   object-fit: contain;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
 }
 
 #questions {
@@ -224,6 +225,20 @@ img {
   width: 2rem;
 }
 
+/* Cards */
+.cards {
+  gap: 3rem;
+  position: relative;
+}
+
+.cards h3 {
+  margin: 2rem 0;
+}
+
+.cards a {
+  position: relative;
+  top: 4.5rem;
+}
 /* Media queries */
 @media (min-width: 768px) {
   .flex {
