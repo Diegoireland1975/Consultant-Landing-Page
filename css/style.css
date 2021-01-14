@@ -274,6 +274,7 @@ img {
   margin: 0 auto;
   text-align: left;
 }
+
 /* Media queries */
 @media (min-width: 768px) {
   .flex {
