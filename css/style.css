@@ -227,8 +227,7 @@ img {
 
 /* Cards */
 .cards {
-  gap: 3rem;
-  position: relative;
+  gap: 4rem;
 }
 
 .cards h3 {
@@ -238,6 +237,42 @@ img {
 .cards a {
   position: relative;
   top: 4.5rem;
+}
+
+.cards img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.cards .card {
+  max-width: 350px;
+}
+.feature-world img {
+  width: 30%;
+}
+
+.feature-world span {
+  font-weight: 100;
+  color: var(--btn-primary);
+}
+.feature-world-text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-world-text p {
+  margin-bottom: 2rem;
+}
+.feature-world .card {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
 }
 /* Media queries */
 @media (min-width: 768px) {
