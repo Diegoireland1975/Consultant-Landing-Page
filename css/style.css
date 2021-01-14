@@ -275,6 +275,28 @@ img {
   text-align: left;
 }
 
+/* form */
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+.contact .card {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  border: 2px solid var(--btn-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2.5rem;
+  margin-bottom: 1rem;
+}
 /* Media queries */
 @media (min-width: 768px) {
   .flex {
@@ -326,5 +348,19 @@ img {
   .people-img .flex:nth-child(3) img:last-child {
     position: relative;
     top: 2rem;
+  }
+
+  .contact h2 {
+    position: relative;
+    left: -10rem;
+    font-size: 2rem;
+  }
+
+  .contact h5 {
+    margin: 1rem 0;
+  }
+
+  .contact .sign {
+    color: var(--btn-secondary);
   }
 }
