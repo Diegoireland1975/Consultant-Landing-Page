@@ -315,7 +315,19 @@ input {
 .main-footer {
   margin-top: 5rem;
   background: var(--btn-primary);
-  border-radius: 45% 45% 0 0;
+  clip-path: polygon(50% 1%, 78% 2%, 100% 4%, 100% 100%, 0 100%, 0 4%, 23% 2%);
+  clip-path: polygon(
+    48% 2%,
+    80% 4%,
+    100% 8%,
+    100% 70%,
+    100% 100%,
+    50% 100%,
+    0 100%,
+    0% 70%,
+    0 8%,
+    20% 4%
+  );
 }
 
 .main-footer a {
@@ -434,6 +446,26 @@ input {
     position: relative;
     left: -10rem;
     font-size: 2rem;
+  }
+
+  .main-footer {
+    padding-top: 5rem;
+    clip-path: polygon(
+      50% 0,
+      70% 4%,
+      86% 14%,
+      100% 31%,
+      100% 100%,
+      50% 100%,
+      0 100%,
+      0 32%,
+      15% 14%,
+      31% 4%
+    );
+  }
+
+  .main-footer .social {
+    margin-top: 1rem;
   }
 
   .social-logos img {
