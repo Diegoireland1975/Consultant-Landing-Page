@@ -216,7 +216,7 @@ img {
   background: url("../img/Ellipse12.jpg") no-repeat top left / cover;
 }
 
-#questions {
+.questions-card {
   padding: 1rem 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
