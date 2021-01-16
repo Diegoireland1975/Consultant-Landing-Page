@@ -316,6 +316,7 @@ input {
   margin-top: 4rem;
   padding: 6rem;
   background: url("../img/footer-bg.jpg") no-repeat center center / cover;
+  justify-content: center;
 }
 
 .main-footer a {
@@ -330,7 +331,6 @@ input {
 .main-footer .flex {
   flex-wrap: wrap;
   align-items: flex-start;
-  align-items: center;
   justify-content: space-around;
 }
 .main-footer h3 {
@@ -357,6 +357,10 @@ input {
   transform: scale(1.1);
 }
 
+.main-footer .social {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .social-nav li {
   margin-bottom: 0.2rem;
 }
@@ -445,6 +449,9 @@ input {
     margin-top: 1rem;
   }
 
+  .main-footer .social {
+    text-align: left;
+  }
   .social-logos img {
     margin-left: 2rem;
   }
