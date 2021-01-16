@@ -311,6 +311,9 @@ input {
   margin-bottom: 1rem;
 }
 
+button {
+  border: none;
+}
 /* footer */
 .main-footer {
   margin-top: 4rem;
