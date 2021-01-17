@@ -216,7 +216,7 @@ img {
   background: url("../img/Ellipse12.jpg") no-repeat top left / cover;
 }
 
-.questions-card {
+.question-card {
   padding: 1rem 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
@@ -224,11 +224,17 @@ img {
   display: block;
   font-family: "Montserrat";
   border: none;
-  max-width: 350px;
+  max-width: 450px;
+  transition: 4s all ease;
 }
 
-#questions img {
-  width: 2rem;
+.question-card-header,
+.question-card-body {
+  padding: 1rem 1.5rem;
+}
+
+.question-card-body {
+  display: none;
 }
 
 /* Cards */
@@ -378,6 +384,9 @@ button {
   margin: 0.5rem 0;
 }
 
+.show {
+  display: inline;
+}
 /* ################ */
 /* Media queries */
 /* ################# */
