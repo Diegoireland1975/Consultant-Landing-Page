@@ -1,7 +1,8 @@
 const panel = document.querySelectorAll(".question-card-header");
+const show = document.getElementsByClassName(".question-card-body");
 
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
-    panel.classList.toggle("show");
+    show.classList.toggle("show");
   });
 });
