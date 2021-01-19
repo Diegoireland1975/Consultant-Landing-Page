@@ -382,6 +382,7 @@ button {
 
 .main-footer .social {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 .social-nav li {
