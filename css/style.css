@@ -240,6 +240,11 @@ img {
   top: 50%;
   right: 5%;
   cursor: pointer;
+  transition: 0.2s transform ease;
+}
+
+.question-card-header:active::after {
+  transform: rotate(45deg);
 }
 
 .question-card-header,
