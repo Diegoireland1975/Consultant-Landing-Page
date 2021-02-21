@@ -1,3 +1,13 @@
+// ##############
+// Hamburger Menu
+// ###############
+const navToggler = document.getElementById("nav-toggler");
+const navLinks = document.getElementById("nav-links");
+
+navToggler.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  navToggler.classList.toggle("rotate");
+});
 // const panel = document.querySelectorAll(".question-card-header");
 // const show = document.getElementsByClassName("question-card-body");
 
