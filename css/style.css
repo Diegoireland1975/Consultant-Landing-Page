@@ -28,6 +28,7 @@ button {
 a {
   text-decoration: none;
   color: #9b9bca;
+  cursor: pointer;
 }
 
 ul {
