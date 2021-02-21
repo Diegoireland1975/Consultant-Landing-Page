@@ -24,6 +24,7 @@ body {
 button {
   outline: 0;
 }
+
 a {
   text-decoration: none;
   color: #9b9bca;
@@ -82,22 +83,40 @@ img {
 /* Hamburger Menu */
 .nav-toggler {
   cursor: pointer;
-  opacity: 1;
+  opacity: 0.5;
   width: 2rem;
   border: 0;
   background: transparent;
   margin-left: auto;
-  transition: 0.5s transform ease-in-out;
+  transition: 0.5s opacity ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.nav-toggler:hover {
+  opacity: 1;
+}
+.nav-toggler:focus {
+  outline: 0;
+}
+
+.main-nav .nav-links {
+  max-height: 0;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.main-nav .nav-links.show {
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .nav-toggler.rotate {
   transform: rotate(45deg);
   opacity: 0.5;
 }
-.nav-toggler:focus {
-  outline: 0;
-}
-
 /* Showcase */
 .showcase {
   min-height: 90vh;
@@ -460,6 +479,10 @@ button {
     align-items: center;
   }
 
+  .main-nav .nav-links {
+    max-height: 100vh;
+    opacity: 1;
+  }
   .main-header h5 {
     left: 0.5rem;
   }
@@ -467,6 +490,9 @@ button {
     margin-left: 1rem;
   }
 
+  .nav-toggler {
+    display: none;
+  }
   .showcase h1 {
     font-size: 3rem;
   }
