@@ -79,6 +79,25 @@ img {
   color: #505050;
 }
 
+/* Hamburger Menu */
+.nav-toggler {
+  cursor: pointer;
+  opacity: 1;
+  width: 2rem;
+  border: 0;
+  background: transparent;
+  margin-left: auto;
+  transition: 0.5s transform ease-in-out;
+}
+
+.nav-toggler.rotate {
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+.nav-toggler:focus {
+  outline: 0;
+}
+
 /* Showcase */
 .showcase {
   min-height: 90vh;
