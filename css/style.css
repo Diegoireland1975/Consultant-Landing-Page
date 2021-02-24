@@ -7,8 +7,7 @@
   --btn-primary: #9b9bca;
   --btn-secondary: #f01f35;
 }
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
