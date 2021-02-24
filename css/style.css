@@ -90,7 +90,7 @@ img {
   border: 0;
   background: transparent;
   margin-left: auto;
-  transition: 0.5s opacity ease-in-out;
+  transition: 0.5s all ease-in-out;
   position: absolute;
   top: 0;
   right: 0;
@@ -104,10 +104,14 @@ img {
   outline: 0;
 }
 
+.nav-toggler.rotate {
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
 .main-nav .nav-links {
   max-height: 0;
   opacity: 0;
-  transition: 0.5s all ease;
+  transition: 0.5s max-height ease-in-out;
 }
 
 .main-nav .nav-links.show {
@@ -115,21 +119,13 @@ img {
   opacity: 1;
 }
 
-.nav-toggler.rotate {
-  transform: rotate(45deg);
-  opacity: 0.5;
-}
 /* Showcase */
-.showcase {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  pointer-events: none;
-}
 
 .showcase h1 {
   font-size: 2rem;
   color: #696a86;
+  line-height: 1;
+  margin-bottom: 0;
 }
 
 .showcase p {
@@ -141,7 +137,7 @@ img {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .showcase-text a {
@@ -479,6 +475,7 @@ button {
     gap: 3rem;
   }
   .main-header .flex {
+    display: flex;
     justify-content: space-around;
     align-items: center;
   }
@@ -491,11 +488,15 @@ button {
     left: 0.5rem;
   }
   .nav-links li {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   .nav-toggler {
     display: none;
+  }
+
+  .showcase {
+    padding-left: 6rem;
   }
   .showcase h1 {
     font-size: 3rem;
@@ -535,11 +536,12 @@ button {
   }
   .feature-world .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
   }
 
   .feature-girl {
     min-width: 500px;
+    height: 600px;
     object-fit: cover;
     object-position: left;
     position: absolute;
@@ -554,7 +556,7 @@ button {
 
   .feature-world-text h3,
   .feature-world-text p {
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .contact h2 {
     position: relative;
