@@ -29,6 +29,7 @@
   border-radius: 0.5rem;
   transition: 0.4s transform ease;
   white-space: nowrap;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn:hover,

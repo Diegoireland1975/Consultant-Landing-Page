@@ -47,7 +47,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+p {
   font-family: "Poppins", sans-serif;
 }
 /* Header */
@@ -71,11 +72,12 @@ h3 {
 }
 
 .main-nav a {
-  transition: 0.4s background-color, color ease;
-  padding: 0.6rem 1.7rem;
   border-radius: 0.5rem;
   color: #717784;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6rem 1.7rem;
+  transition: 0.4s background-color, color ease;
   white-space: nowrap;
 }
 
@@ -161,11 +163,11 @@ h3 {
 
 .service-text {
   color: var(--btn-primary);
-  max-width: 600px;
+  max-width: 746px;
   margin: 0 auto;
 }
 
-.service-text h3 {
+.service-text h2 {
   margin-bottom: 1rem;
   font-weight: bold;
 }
@@ -174,9 +176,10 @@ h3 {
 }
 
 .services div {
-  max-width: 200px;
+  width: 261px;
+  height: 250px;
   margin: 2rem auto;
-  transition: 0.3s transform ease;
+  transition: 0.5s all ease-in-out;
   padding: 1rem;
 }
 
@@ -186,17 +189,19 @@ h3 {
   background: rgb(245, 245, 245);
   color: var(--primary-color);
   cursor: pointer;
+  border: 1px solid #9d9d9d;
+  border-radius: 5px;
 }
 .services img {
   width: 2rem;
   margin: 0 auto;
 }
 
-.services h4 {
+.services h3 {
   margin: 1rem 0;
 }
 
-.services h4,
+.services h3,
 .services p {
   color: var(--btn-primary);
 }
@@ -208,7 +213,7 @@ h3 {
   text-align: left;
 }
 
-.people-text h3 {
+.people-text h2 {
   margin-bottom: 1rem;
 }
 
