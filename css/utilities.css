@@ -34,7 +34,7 @@
 
 /* buttons */
 .btn {
-  border-radius: 0.5rem;
+  border-radius: 10px;
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -42,7 +42,6 @@
   padding: 0.6rem 2.5rem;
   transition: 0.4s transform ease;
   white-space: nowrap;
-  border-radius: 10px;
 }
 .btn-bold {
   font-weight: bold;
