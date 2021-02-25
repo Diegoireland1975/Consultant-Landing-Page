@@ -22,16 +22,37 @@
   text-align: center;
 }
 
-/* buttons */
-.btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  border-radius: 0.5rem;
-  transition: 0.4s transform ease;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
+.section-header {
+  color: #402b2b;
+  font-size: 2rem;
+  line-height: 140%;
+  text-align: left;
+  margin-left: 3rem;
+  font-family: PT Serif;
+  max-width: 550px;
 }
 
+/* buttons */
+.btn {
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.6rem 2.5rem;
+  transition: 0.4s transform ease;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+.btn-bold {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn-long {
+  padding: 2rem 13rem;
+}
 .btn:hover,
 .btn:focus {
   transform: scale(0.95);
